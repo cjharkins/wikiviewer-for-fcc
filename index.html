@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>WikiViewer for FCC</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://daneden.github.io/animate.css/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+  <div id="page_wrapper" class="wrapper">
+    <div id="header_wrapper">
+      <h1 class="page_header">Wiki Search Tool</h1>
+    </div>
+    <!--end header div-->
+    <div id="form_wrapper" class="form animated flipInX ">
+      <input id="search" placeholder="I'm interested in..." type="text"></input>
+      <g id="submit" class="svg_group">
+        <svg id="path_container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="60" height="80">
+          <path fill="none" stroke="yellow" stroke-width="36" stroke-linecap="round"
+          d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"/>
+        </svg>
+      </g>
+      <div class="random_search">
+        <button id="random_search_btn">random page</button>
+      </div>
+    </div>
+    <!--end search bar grouping-->
+    <div id="search_results"></div>
+  </div>
+  <!--end wrapper div-->
+</body>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

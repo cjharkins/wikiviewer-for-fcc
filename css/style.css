@@ -1,0 +1,188 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat;
+  outline: none;
+}
+a {
+  color: white;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgba(239, 185, 46, 1);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 185, 46, 1)),
+    color-stop(100%, rgba(239, 59, 57, 1))
+  );
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(255, 185, 46, 1)),
+    to(rgba(239, 59, 57, 1))
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 185, 46, 1) 0%,
+    rgba(239, 59, 57, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr='#ffb92e',
+      endColorstr='#ef3b39',
+      GradientType=0
+    );
+  background-attachment: fixed;
+}
+.page_header {
+  font-family: Montserrat;
+  font-size: 4em;
+  padding: 30px;
+  letter-spacing: -4px;
+  color: yellow;
+}
+/*****************************
+    Search content styles
+  *****************************/
+#form_wrapper {
+  margin: 0 auto;
+  padding: 20px;
+}
+#search {
+  vertical-align: top;
+  font-size:1.4em;
+  width: 70%;
+  margin: 10px;
+  border: 4px solid yellow;
+  border-radius: 50px;
+  padding: 15px;
+  background-color: rgba(255, 185, 46, 0);
+}
+.svg_group:hover, .svg_group:hover svg path {
+  stroke: rgba(239, 59, 57, 1);
+  cursor: pointer;
+}
+#random_search_btn {
+  float: right;
+  margin-right: 20%;
+  background-color: #23b673;
+  border-radius: 75px;
+  padding: 5px 10px;
+  font-size: .8em;
+  color: white;
+}
+#random_search_btn:hover {
+  cursor: pointer;
+  background-color: rgba(239, 59, 57, 1);
+  color: yellow;
+}
+#search_results {
+  min-width: 400px;
+  margin: 0 auto 200px auto;
+  text-align: center;
+}
+li {
+  padding: 3px;
+  /*     background-color:rgba(255,255,255,.7); */
+  margin: 0 auto;
+}
+li h1 {
+  font-size: 1.2em;
+  text-align: left;
+}
+li p {
+  text-align: left;
+}
+.search_thumbnail {
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  border: 4px solid yellow;
+}
+.search_content {
+  color: yellow;
+  width: 280px;
+  height: 100px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 5px;
+}
+
+@media screen and (min-width: 1280px) {
+  /***********************************
+         Background and Header
+  ***********************************/
+  .page_header {
+    font-family: Montserrat;
+    font-size: 5em;
+    padding: 50px 0px 0px 50px;
+  }
+  /*****************************
+    Search content styles
+  *****************************/
+  #form_wrapper {
+    position: relative;
+    margin: 100px auto 0 auto;
+    width: 50%;
+  }
+  #search {
+    width: 75%;
+  }
+  .slide {
+    animation: slide 1s ease-out 0s 1 normal forwards;
+    -webkit-animation: slide 1s ease-out 0s 1 normal forwards;
+  }
+  @-webkit-keyframes slide {
+    0% {
+    }
+    100% {
+      -webkit-transform: scale(0.8) translateX(65%) translateY(-225px);
+              transform: scale(0.8) translateX(65%) translateY(-225px);
+    }
+  }
+  @keyframes slide {
+    0% {
+    }
+    100% {
+      -webkit-transform: scale(0.8) translateX(65%) translateY(-225px);
+              transform: scale(0.8) translateX(65%) translateY(-225px);
+    }
+  }
+  /************************
+      Search result div's
+  *************************/
+  #search_results {
+    width: 75%;
+    margin: -100px auto 200px auto;
+  }
+  li {
+    width: 500px;
+    padding: 3px;
+    background-color: white;
+    margin: 20px auto;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(107, 103, 107, 0.29);
+    box-shadow: 4px 4px 5px 0px rgba(107, 103, 107, 0.29);
+  }
+  .search_thumbnail {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+    border: 4px solid grey;
+  }
+  .search_content {
+    color: black;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 15px;
+  }
+}
